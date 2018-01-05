@@ -42,3 +42,7 @@ ubuntu系列，推荐书目如下：
 
 ## 相关blog文章
 待更新....
+
+
+##参考链接
+http://www.cnblogs.com/jiangjh/archive/2011/06/27/2091164.html
