@@ -5,13 +5,7 @@
 个人笔记同步管理，仅仅只是一个学习笔记如果有帮助的话可以联系我学习交流
 
 ## 联系我 Contact me
-
-QQ: 765543552
-
-Twitter: wyh001
-
-Email: rickgrimes@foxmail.com
-
-WebSite: http://clarwan.cn/
+gmail wjj199107@gmail.com  
+WebSite: http://clarwan.xyz/
 
 
