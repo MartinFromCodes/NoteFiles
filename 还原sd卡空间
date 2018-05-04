@@ -8,7 +8,7 @@
 
 5.create partition primary，重建SD卡分区信息 
 
-6.format fs=ntfs quick，对SD卡执行快速格式化 
+6.format fs=fat32 quick，对SD卡执行快速格式化 
 
 7.exit，退出diskpart工具
 
