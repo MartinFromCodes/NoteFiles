@@ -206,54 +206,70 @@ url3
 url4
 ```
 接着使用这个文件和参数-i下载
+
 实例10：使用wget –mirror镜像网站
 命令：
-wget --mirror -p --convert-links -P ./LOCAL URL
+
+```wget --mirror -p --convert-links -P ./LOCAL URL```
+
 说明：
 下载整个网站到本地。
+```
 –miror:开户镜像下载
 -p:下载所有为了html页面显示正常的文件
 –convert-links:下载后，转换成本地的链接
 -P ./LOCAL：保存所有文件和目录到本地指定目录
+```
+
 实例11：使用wget –reject过滤指定格式下载
 命令：
-wget --reject=gif ur
+
+```wget --reject=gif ur```
+
 说明：
 下载一个网站，但你不希望下载图片，可以使用以下命令。
+
 实例12：使用wget -o把下载信息存入日志文件
 命令：
-wget -o download.log URL
+
+```wget -o download.log URL```
+
 说明：
 不希望下载信息直接显示在终端而是在一个日志文件，可以使用
+
 实例13：使用wget -Q限制总下载文件大小
 命令：
-wget -Q5m -i filelist.txt
+
+```wget -Q5m -i filelist.txt```
+
 说明：
+
 当你想要下载的文件超过5M而退出下载，你可以使用。注意：这个参数对单个文件下载不起作用，只能递归下载时才有效。
+
 实例14：使用wget -r -A下载指定格式文件
 命令：
-wget -r -A.pdf url
+
+```wget -r -A.pdf url```
+
 说明：
 可以在以下情况使用该功能：
 下载一个网站的所有图片
 下载一个网站的所有视频
 下载一个网站的所有PDF文件
+
 实例15：使用wget FTP下载
 命令：
+```
 wget ftp-url
 wget --ftp-user=USERNAME --ftp-password=PASSWORD url
+```
 说明：
 可以使用wget来完成ftp链接的下载。
+
 使用wget匿名ftp下载：
-wget ftp-url
+
+```wget ftp-url```
 使用wget用户名和密码认证的ftp下载
-wget --ftp-user=USERNAME --ftp-password=PASSWORD url
-备注：编译安装
-使用如下命令编译安装： 
-```
-# tar zxvf wget-1.9.1.tar.gz 
-# cd wget-1.9.1 
-# ./configure 
-# make 
-# make install 
-```
+
+```wget --ftp-user=USERNAME --ftp-password=PASSWORD url```
+ 
