@@ -85,7 +85,7 @@ HTTP 选项参数：
 ```
 
 FTP 选项参数：
-
+```
 -nr, –dont-remove-listing 不移走 `.listing’文件
 -g, –glob=on/off 打开或关闭文件名的 globbing机制
 –passive-ftp 使用被动传输模式 (缺省值).
@@ -113,12 +113,16 @@ FTP 选项参数：
 -X, –exclude-directories=LIST 不被包含目录的列表
 -np, –no-parent 不要追溯到父目录
 wget -S –spider url 不下载只显示过程
+```
+
 4．使用实例：
+
 实例1：使用wget下载单个文件
 命令：
 wget http://www.minjieren.com/wordpress-3.1-zh_CN.zip
 说明：
 以下的例子是从网络下载一个文件并保存在当前目录，在下载的过程中会显示进度条，包含（下载完成百分比，已经下载的字节，当前下载速度，剩余下载时间）。
+
 实例2：使用wget -O下载并以不同的文件名保存
 命令：
 :	wget -O wordpress.zip http://www.minjieren.com/download.aspx?id=1080
@@ -144,53 +148,63 @@ wget -c http://www.minjieren.com/wordpress-3.1-zh_CN.zip
 wget -b http://www.minjieren.com/wordpress-3.1-zh_CN.zip
 说明：
 对于下载非常大的文件的时候，我们可以使用参数-b进行后台下载。
+```
 wget -b http://www.minjieren.com/wordpress-3.1-zh_CN.zip
 Continuing in background, pid 1840.
 Output will be written to `wget-log'.
+```
 你可以使用以下命令来察看下载进度：
-tail -f wget-log
+```tail -f wget-log```
+
 实例6：伪装代理名称下载
-命令：
-wget --user-agent="Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.204 Safari/534.16" http://www.minjieren.com/wordpress-3.1-zh_CN.zip
+
+命令：```
+wget --user-agent="Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.204 Safari/534.16" http://www.minjieren.com/wordpress-3.1-zh_CN.zip```
 说明：
 有些网站能通过根据判断代理名称不是浏览器而拒绝你的下载请求。不过你可以通过–user-agent参数伪装。
 实例7：使用wget –spider测试下载链接
 命令：
-wget --spider URL
+```wget --spider URL```
 说明：
 当你打算进行定时下载，你应该在预定时间测试下载链接是否有效。我们可以增加–spider参数进行检查。
-wget --spider URL
+```wget --spider URL```
 如果下载链接正确，将会显示
+```
 wget --spider URL
 Spider mode enabled. Check if remote file exists.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/html]
 Remote file exists and could contain further links,
 but recursion is disabled -- not retrieving.
+```
 这保证了下载能在预定的时间进行，但当你给错了一个链接，将会显示如下错误
+```
 wget --spider url
 Spider mode enabled. Check if remote file exists.
 HTTP request sent, awaiting response... 404 Not Found
 Remote file does not exist -- broken link!!!
+```
 你可以在以下几种情况下使用spider参数：
 定时下载之前进行检查
 间隔检测网站是否可用
 检查网站页面的死链接
 实例8：使用wget –tries增加重试次数
 命令：
-wget --tries=40 URL
+```wget --tries=40 URL```
 说明：
 如果网络有问题或下载一个大文件也有可能失败。wget默认重试20次连接下载文件。如果需要，你可以使用–tries增加重试次数。
 实例9：使用wget -i下载多个文件
 命令：
-wget -i filelist.txt
+```wget -i filelist.txt```
 说明：
 首先，保存一份下载链接文件
+```
 cat > filelist.txt
 url1
 url2
 url3
 url4
+```
 接着使用这个文件和参数-i下载
 实例10：使用wget –mirror镜像网站
 命令：
