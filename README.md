@@ -17,7 +17,6 @@
     * [Linux学习](https://github.com/MartinFromCodes/NoteFiles/blob/master/Linux%E5%AD%A6%E4%B9%A0.md)
     * [history命令使用](https://github.com/MartinFromCodes/NoteFiles/blob/master/history%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8.md)
     * [wget命令使用](https://github.com/MartinFromCodes/NoteFiles/blob/master/wget%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8.md)
-* 英语
 
 * 其他
    * [QQSpider](https://github.com/MartinFromCodes/NoteFiles/blob/master/QQSpider.md)
@@ -25,6 +24,9 @@
    * [2017问题](https://github.com/MartinFromCodes/NoteFiles/blob/master/2017%E7%9A%84%E9%97%AE%E9%A2%98.md)
    * [C#使用Redis](https://github.com/MartinFromCodes/NoteFiles/blob/master/C%23%E4%BD%BF%E7%94%A8Redis.md)
    * [想成为程序员的表弟](https://github.com/MartinFromCodes/NoteFiles/blob/master/%E6%83%B3%E6%88%90%E4%B8%BA%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%A1%A8%E5%BC%9F.md)
+   
+* 英语
+   * [英语学习的文章](https://github.com/MartinFromCodes/NoteFiles/blob/master/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%96%87%E7%AB%A0.md)
 
 
 
