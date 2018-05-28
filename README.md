@@ -10,9 +10,21 @@
     * [树莓派配置ip](https://github.com/MartinFromCodes/NoteFiles/blob/master/%E6%A0%91%E8%8E%93%E6%B4%BE%E9%85%8D%E7%BD%AEip.md)
     * [树莓派2折腾笔记](https://github.com/MartinFromCodes/NoteFiles/blob/master/%E6%A0%91%E8%8E%93%E6%B4%BE2%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0.md)
     * [还原sd卡空间](https://github.com/MartinFromCodes/NoteFiles/blob/master/%E8%BF%98%E5%8E%9Fsd%E5%8D%A1%E7%A9%BA%E9%97%B4.md)
-    * 
+* Linux笔记
+    * [Centos Mini 安装配置笔记](https://github.com/MartinFromCodes/NoteFiles/blob/master/Centos%20Mini%20%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E7%AC%94%E8%AE%B0.md)
+    * [Fping](https://github.com/MartinFromCodes/NoteFiles/blob/master/Fping.md)
+    * [Kali下etteracp内网渗透](https://github.com/MartinFromCodes/NoteFiles/blob/master/Kali%E4%B8%8Betteracp%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F.md)
+    * [Linux学习](https://github.com/MartinFromCodes/NoteFiles/blob/master/Linux%E5%AD%A6%E4%B9%A0.md)
+    * [history命令使用](https://github.com/MartinFromCodes/NoteFiles/blob/master/history%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8.md)
+    * [wget命令使用](https://github.com/MartinFromCodes/NoteFiles/blob/master/wget%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8.md)
+* 英语
 
-
+* 其他
+   * [QQSpider](https://github.com/MartinFromCodes/NoteFiles/blob/master/QQSpider.md)
+   * [linux-Centos7安装python3并与python2共存](https://github.com/MartinFromCodes/NoteFiles/blob/master/linux-Centos7%E5%AE%89%E8%A3%85python3%E5%B9%B6%E4%B8%8Epython2%E5%85%B1%E5%AD%98%20-%20JahanGu%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD.pdf)
+   * [2017问题](https://github.com/MartinFromCodes/NoteFiles/blob/master/2017%E7%9A%84%E9%97%AE%E9%A2%98.md)
+   * [C#使用Redis](https://github.com/MartinFromCodes/NoteFiles/blob/master/C%23%E4%BD%BF%E7%94%A8Redis.md)
+   * [想成为程序员的表弟](https://github.com/MartinFromCodes/NoteFiles/blob/master/%E6%83%B3%E6%88%90%E4%B8%BA%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%A1%A8%E5%BC%9F.md)
 
 
 
